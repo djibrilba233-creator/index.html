@@ -640,39 +640,10 @@
          form {
             padding: 20px;
         }
-
-        .formulaire0{
-            background: white;
-            border: 1px solid #abc1d8;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            overflow: hidden;
-        }
-
-        .formulaire {
-            border-bottom: 1px solid #e0e0e0;
-            padding: 12px 15px;
-            display: flex;
-            align-items: center;
-        }
-
-        label {
-            width: 100px;
-            color: #385487; 
-            font-weight: bold;
-            font-size: 14px;
-        }
-
-        input {
-            border: none;
-            outline: none;
-            flex: 1;
-            font-size: 16px;
-            color: #000;
-        }
+        
 
         button {
-            width: 100%;
+            width: 50%;
             padding: 12px;
             background: linear-gradient(to bottom, #a1c4fd 0%, #4facfe 100%);
             border: 1px solid #3d84c6;
@@ -788,8 +759,6 @@
 <body>
     <header class="header">
         <div class="container header-inner">
-
-            <!-- Logo + nom -->
             <a href="#accueil" class="brand">
                 <div class="logo">DB</div>
                 <div class="brand-text">
@@ -954,17 +923,10 @@
 
     <div class="rectangle10">
        <form>
-        <div class="formulaire0">
-            <div class="formulaire">
-                <label for="user">Identifiant</label>
-                <input type="text" id="user" placeholder="Nom d'utilisateur">
-            </div>
-            <div class="formulaire">
-                <label for="pass">Mot de passe</label>
-                <input type="password" id="pass" placeholder="Requis">
-            </div>
-        </div>
-
+            <label for="prenom">First name:</label><br>
+            <input type="text" id="prenom" name="nom" value="djibril"><br>
+            <label for="nom">Last name:</label><br>
+            <input type="text" id="nom" name="nom" value="ba"><br><br>
         <button type="submit">Se connecter</button>
     </form>
     </div>
